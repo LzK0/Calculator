@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <main class="w-screen h-screen flex justify-center items-center bg-zinc-800">
+        <section class="calculator w-2/3 max-w-[500px] h-2/3 bg-gradient-to-b from-zinc-100 to-zinc-300 rounded-lg">
+            <div class="w-full h-1/6 flex items-center justify-end pt-4 pr-4">
+                <div class="w-4/5 h-full bg-zinc-200 rounded-md flex items-center justify-end p-5 overflow-hidden">
+                    <p class="text-3xl" id="result"></p>
+                </div>
+            </div>
+            <div class="w-full h-3/5 grid grid-cols-4 grid-row-4 gap-5 p-2 mt-10">
+                <button class="items hover:bg-zinc-300 transition-all duration-300 ease rounded-md"
+                    data-action="+">+</button>
+                <button class="items hover:bg-zinc-300 transition-all duration-300 ease rounded-md"
+                    data-action="-">-</button>
+                <button class="items hover:bg-zinc-300 transition-all duration-300 ease rounded-md" data-action="*"> *
+                </button>
+                <button class="items hover:bg-zinc-300 transition-all duration-300 ease rounded-md"
+                    data-action="/">/</button>
+                <button class="items hover:bg-zinc-300 transition-all duration-300 ease rounded-md" data-action="<">
+                    < </button>
+                        <button data-action="0"
+                            class="items hover:bg-zinc-300 transition-all duration-300 ease rounded-md">0</button>
+                        <button data-action="1"
+                            class="items hover:bg-zinc-300 transition-all duration-300 ease rounded-md">1</button>
+                        <button data-action="2"
+                            class="items hover:bg-zinc-300 transition-all duration-300 ease rounded-md">2</button>
+                        <button data-action="3"
+                            class="items hover:bg-zinc-300 transition-all duration-300 ease rounded-md">3</button>
+                        <button data-action="4"
+                            class="items hover:bg-zinc-300 transition-all duration-300 ease rounded-md">4</button>
+                        <button data-action="5"
+                            class="items hover:bg-zinc-300 transition-all duration-300 ease rounded-md">5</button>
+                        <button data-action="6"
+                            class="items hover:bg-zinc-300 transition-all duration-300 ease rounded-md">6</button>
+                        <button data-action="7"
+                            class="items hover:bg-zinc-300 transition-all duration-300 ease rounded-md">6</button>
+                        <button data-action="8"
+                            class="items hover:bg-zinc-300 transition-all duration-300 ease rounded-md">8</button>
+                        <button data-action="9"
+                            class="items hover:bg-zinc-300 transition-all duration-300 ease rounded-md">9</button>
+                        <button data-action="."
+                            class="items hover:bg-zinc-300 transition-all duration-300 ease rounded-md">.</button>
+                        <div></div>
+                        <div></div>
+                        <button data-action="clear"
+                            class="items hover:bg-zinc-300 transition-all duration-300 ease rounded-md">AC</button>
+                        <button class="items hover:bg-zinc-300 transition-all duration-300 ease rounded-md"
+                            data-action="calculate"> = </button>
+            </div>
+        </section>
+    </main>
+    <script src="./public/asset/js/script.js"></script>
+</body>
+
+</html>
